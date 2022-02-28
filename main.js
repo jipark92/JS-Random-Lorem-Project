@@ -55,7 +55,7 @@ generateBtn.addEventListener('click', ()=> {
         pTwo.style.visibility = "visible";
         pOne.style.visibility = "visible";
     } else if (quantities.value == 0){
-        
+
         pFour.style.visibility = "hidden";
         pThree.style.visibility = "hidden";
         pTwo.style.visibility = "hidden";
@@ -64,9 +64,6 @@ generateBtn.addEventListener('click', ()=> {
         return;
     }
 });
-
-
-
 
 
 // function loremOne(random) {
@@ -93,11 +90,6 @@ generateBtn.addEventListener('click', ()=> {
 //     console.log(random)
 // }
 // loremFour(rndmNumber());
-
-
-
-
-
 
 
 function rndmNumber() {
