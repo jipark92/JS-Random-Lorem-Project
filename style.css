@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
+
+
+* {
+    font-family: 'Hubballi', cursive;
+    background-color:#F87171;
+    padding: 0;
+    
+}
+
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+}
+
+
+.generator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.generator > p {
+    font-size: 1.8rem;
+}
+
+
+input {
+    width: 70px;
+    height: 40px;
+    font-size: 1.8rem;
+    border: 2px solid black;
+}
+
+button {
+    min-width: 100px;
+    height: 40px;
+    border: 2px solid black;
+    font-size: 1.8rem;
+}
+
+button:hover {
+    background-color: #F97316;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.lorem {
+    background-color: #FAFAF9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 30vw;
+    min-height: 10vh;
+    font-size: 1.2rem;
+
+}
