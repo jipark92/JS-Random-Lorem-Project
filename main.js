@@ -17,13 +17,47 @@ const pFour = document.querySelector('.four');
 const loremParagraph = document.querySelector('.lorem');
 
 generateBtn.addEventListener('click', ()=> {
-    
-    if (quantities === "1"){
-       
+    console.log(quantities.value);
+    if (quantities.value == 1){
+       pOne.textContent = rndmLorem[rndmNumber()];
+       pFour.style.visibility = "hidden";
+       pThree.style.visibility = "hidden";
+       pTwo.style.visibility = "hidden";
+       pOne.style.visibility = "visible";
 
+    } else if (quantities.value == 2) {
+        pTwo.textContent = rndmLorem[rndmNumber()];
+        pOne.textContent = rndmLorem[rndmNumber()];
+
+        pFour.style.visibility = "hidden";
+        pThree.style.visibility = "hidden";
+        pTwo.style.visibility = "visible";
+        pOne.style.visibility ="visible";
+
+    } else if (quantities.value == 3) {
+        pThree.textContent = rndmLorem[rndmNumber()];
+        pTwo.textContent = rndmLorem[rndmNumber()];
+        pOne.textContent = rndmLorem[rndmNumber()];
+
+        pFour.style.visibility = "hidden";
+        pThree.style.visibility = "visible";
+        pTwo.style.visibility = "visible";
+        pOne.style.visibility = "visible";
+
+    } else if (quantities.value == 4) {
+        pFour.textContent = rndmLorem[rndmNumber()];
+        pThree.textContent = rndmLorem[rndmNumber()];
+        pTwo.textContent = rndmLorem[rndmNumber()];
+        pOne.textContent = rndmLorem[rndmNumber()];
+
+        pFour.style.visibility = "visible";
+        pThree.style.visibility = "visible";
+        pTwo.style.visibility = "visible";
+        pOne.style.visibility = "visible";
+    } else {
+        return;
     }
-})
-
+});
 
 
 
