@@ -54,6 +54,12 @@ generateBtn.addEventListener('click', ()=> {
         pThree.style.visibility = "visible";
         pTwo.style.visibility = "visible";
         pOne.style.visibility = "visible";
+    } else if (quantities.value == 0){
+        
+        pFour.style.visibility = "hidden";
+        pThree.style.visibility = "hidden";
+        pTwo.style.visibility = "hidden";
+        pOne.style.visibility = "hidden";
     } else {
         return;
     }
